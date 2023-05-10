@@ -1,0 +1,15 @@
+.color-container-header {
+    background-color: rgb(77, 38, 141);
+    padding: 0rem 4rem;
+}
+
+.text-container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.text-container-header p {
+    font-size: 0.75rem;
+    margin: 0.25rem 0rem;
+}

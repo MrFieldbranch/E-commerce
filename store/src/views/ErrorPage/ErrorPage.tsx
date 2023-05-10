@@ -7,7 +7,7 @@ function ErrorPage() {
         <div>
             <h1>Error 404</h1>
             <h1>Oops! Något blev fel. Klicka nedan för att komma tillbaka till startsidan.</h1>
-            <Button buttonName="Tillbaka till startsidan" />
+            <Button routeName="/start" buttonName="Tillbaka till startsidan" />
         </div>
     );
 }

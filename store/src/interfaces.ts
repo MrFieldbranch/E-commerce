@@ -1,4 +1,5 @@
 export interface IButton {
+    routeName: string;
     buttonName: string;
 }
 

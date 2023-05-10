@@ -1,10 +1,16 @@
 import { IButton } from '../../interfaces';
 import './Button.css';
+import { useNavigate } from "react-router-dom";
 
-function Button({buttonName}: IButton) {
+function Button({ routeName, buttonName }: IButton) {
+
+    let navigate = useNavigate();
+    const navigateTo = () => {
+        navigate(routeName);
+    }
 
     return (
-        <button>{buttonName}</button>
+        <button onClick={navigateTo}>{buttonName}</button>
     );
 }
 

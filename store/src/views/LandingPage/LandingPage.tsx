@@ -3,6 +3,7 @@ import "./LandingPage.css";
 import { db } from "../../firestore-config";
 import { IClothes } from "../../interfaces";
 import { useEffect, useState } from "react";
+import Button from "../../components/Button/Button";
 
 function LandingPage() {
 
@@ -53,6 +54,10 @@ function LandingPage() {
 
     return ( 
         <div className="landingPage">
+            <Button routeName="/sweatersmen" buttonName="Tröjor Herr" />
+            <Button routeName="/sweaterswomen" buttonName="Tröjor Dam" />
+            <Button routeName="/trousersmen" buttonName="Byxor Herr" />
+            <Button routeName="/trouserswomen" buttonName="Byxor Dam" />
             {sweatersArray}
             {trousersArray}
         </div>
