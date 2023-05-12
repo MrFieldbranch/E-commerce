@@ -1,9 +1,9 @@
 .color-container-header {
-    background-color: rgb(77, 38, 141);
-    padding: 0rem 4rem;
+    background-color: rgb(77, 38, 141);    
 }
 
 .text-container-header {
+    padding: 0rem 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;    

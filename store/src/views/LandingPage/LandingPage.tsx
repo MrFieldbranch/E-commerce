@@ -53,14 +53,14 @@ function LandingPage() {
     ));
 
     return ( 
-        <div className="landingPage">
+        <section>
             <Button routeName="/sweatersmen" buttonName="Tröjor Herr" />
             <Button routeName="/sweaterswomen" buttonName="Tröjor Dam" />
             <Button routeName="/trousersmen" buttonName="Byxor Herr" />
             <Button routeName="/trouserswomen" buttonName="Byxor Dam" />
             {sweatersArray}
             {trousersArray}
-        </div>
+        </section>
     );
 }
 

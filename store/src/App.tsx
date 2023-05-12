@@ -9,11 +9,13 @@ import SweatersMen from './views/SweatersMen/SweatersMen';
 import SweatersWomen from './views/SweatersWomen/SweatersWomen';
 import TrousersMen from './views/TrousersMen/TrousersMen';
 import TrousersWomen from './views/TrousersWomen/TrousersWomen';
+import Admin from './views/Admin/Admin';
 
 function App() {
   return (
-    <BrowserRouter>      
-        <Header />
+    <BrowserRouter>
+      <Header />
+      <div className='content-container'>
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/start' element={<LandingPage />} />
@@ -21,9 +23,11 @@ function App() {
           <Route path='/sweaterswomen' element={<SweatersWomen />} />
           <Route path='/trousersmen' element={<TrousersMen />} />
           <Route path='/trouserswomen' element={<TrousersWomen />} />
+          <Route path='/admin' element={<Admin />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>
-        <Footer />      
+      </div>
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,0 +1,46 @@
+.add-new-product {
+    width: 30%;
+    margin: auto;
+}
+
+.add-new-product button {
+    display: block;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+.separation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+input {
+    max-width: 9.8rem;
+    height: 1.3rem;
+}
+
+select {
+    width: 4rem;
+    height: 1.3rem;
+}
+

@@ -14,3 +14,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  color: rgb(255,255,255);
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(255,255,255);
+}

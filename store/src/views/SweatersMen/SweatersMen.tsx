@@ -34,8 +34,9 @@ function SweatersMen() {
 
     return (
         <section>
+            <h1>Tröjor Herr</h1>
             {sweatersArrayMen}
-            <Button routeName="/start" buttonName="Tillbaka till startsidan" />
+            <Button routeName="/start" buttonName="Tillbaka" />
         </section>
     );
 }

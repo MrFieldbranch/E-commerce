@@ -32,8 +32,9 @@ function TrousersWomen() {
 
     return (
         <section>
+            <h1>Byxor Dam</h1>
             {trousersArrayWomen}
-            <Button routeName="/start" buttonName="Tillbaka till startsidan" />
+            <Button routeName="/start" buttonName="Tillbaka" />
         </section>
     );
 }

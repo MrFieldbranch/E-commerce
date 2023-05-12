@@ -32,8 +32,9 @@ function TrousersMen() {
 
     return (
         <section>
+            <h1>Byxor Herr</h1>
             {trousersArrayMen}
-            <Button routeName="/start" buttonName="Tillbaka till startsidan" />
+            <Button routeName="/start" buttonName="Tillbaka" />
         </section>
     );
 }
