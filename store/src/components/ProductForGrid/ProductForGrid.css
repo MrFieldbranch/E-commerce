@@ -1,0 +1,27 @@
+.product-container-small {
+    width: 12rem;
+    background-color: white;
+    color: black;  
+    border-radius: 0.5rem;
+    text-align: center;    
+}
+
+.product-container-small p {
+    margin: 0.2rem;
+}
+
+.image-container-small {
+    width: 10rem;
+    height: 10rem;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: auto;    
+    border-radius: 0.4rem;
+}
+
+.image-container-small img {
+    width: 7rem;
+}
+

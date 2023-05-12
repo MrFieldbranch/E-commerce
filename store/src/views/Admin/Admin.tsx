@@ -13,6 +13,7 @@ function Admin() {
 
     const [nameInput, setNameInput] = useState("Produktnamn");
     const [selectedFile, setSelectedFile] = useState<File | undefined>();
+    const [altInput, setAltInput] = useState("");
     const [price, setPrice] = useState(0);
     const [descriptionInput, setDescriptionInput] = useState("Beskriv produkten här");
     const [sexInput, setSexInput] = useState("");
@@ -30,6 +31,7 @@ function Admin() {
         await addDoc(clothesCollectionRef, {
             name: nameInput,
             imageUrl: url,
+            altName: altInput,
             price: price,
             description: descriptionInput,
             sex: sexInput,
@@ -50,8 +52,6 @@ function Admin() {
             });
         });
     };
-
-
 
     return (
         <section className='add-new-product' >
@@ -76,6 +76,16 @@ function Admin() {
                         name="image"
                         id="image"
                         onChange={imageSelectedHandler}
+                        required
+                    />
+                </div>
+                <div className='separation'>
+                    <label htmlFor="alt">Alt för bild</label>
+                    <input
+                        type="text"
+                        name='alt'
+                        id='alt'
+                        onChange={(e) => setAltInput(e.target.value)}
                         required
                     />
                 </div>
