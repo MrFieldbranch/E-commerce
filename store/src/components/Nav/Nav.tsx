@@ -6,10 +6,9 @@ function Nav() {
     return (
         <nav>
             <div className='text-container-nav'>
-                <p>Länk 1</p>
-                <p>Länk 2</p>
-                <p>Länk 3</p>
-                <p>Länk 4</p>
+                <p>Logo och företagsnamn</p>
+                <p>Dam-dropdown</p>
+                <p>Herr-dropdown</p>                
                 <Link to="/admin">Admin Login</Link>
             </div>
         </nav>

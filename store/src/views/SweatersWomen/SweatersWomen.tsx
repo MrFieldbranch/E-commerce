@@ -4,6 +4,7 @@ import './SweatersWomen.css';
 import { IClothes } from '../../interfaces';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../firestore-config';
+import ProductForGrid from '../../components/ProductForGrid/ProductForGrid';
 
 function SweatersWomen() {
     const [sweatersWomen, setSweatersWomen] = useState<IClothes[]>([]);
@@ -19,21 +20,24 @@ function SweatersWomen() {
     }
 
     useEffect(() => {
-        getSweatersWomen()        
+        getSweatersWomen()
     }, []);
 
     const sweatersArrayWomen = sweatersWomen.map((x) => (
-        <div key={x.id}>
-            <h3>{x.name}</h3>
-            <p>{x.price}</p>            
-            <p>{x.description}</p>
-        </div>
+        <ProductForGrid key={x.id} 
+                        name={x.name} 
+                        imageLink={x.imageUrl} 
+                        altName={x.altName} 
+                        price={x.price} 
+        />        
     ));
 
     return (
-        <section>
+        <section className='category-page'>
             <h1>Tröjor Dam</h1>
-            {sweatersArrayWomen}
+            <div className='display-products'>
+                {sweatersArrayWomen}
+            </div>
             <Button routeName="/start" buttonName="Tillbaka" />
         </section>
     );

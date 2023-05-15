@@ -10,6 +10,10 @@ import SweatersWomen from './views/SweatersWomen/SweatersWomen';
 import TrousersMen from './views/TrousersMen/TrousersMen';
 import TrousersWomen from './views/TrousersWomen/TrousersWomen';
 import Admin from './views/Admin/Admin';
+import ShirtsMen from './views/ShirtsMen/ShirtsMen';
+import ShirtsWomen from './views/ShirtsWomen/ShirtsWomen';
+import ShoesMen from './views/ShoesMen/ShoesMen';
+import ShoesWomen from './views/ShoesWomen/ShoesWomen';
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
           <Route path='/sweaterswomen' element={<SweatersWomen />} />
           <Route path='/trousersmen' element={<TrousersMen />} />
           <Route path='/trouserswomen' element={<TrousersWomen />} />
+          <Route path='/shirtsmen' element={<ShirtsMen />} />
+          <Route path='/shirtswomen' element={<ShirtsWomen />} />
+          <Route path='/shoesmen' element={<ShoesMen />} />
+          <Route path='/shoeswomen' element={<ShoesWomen />} />
           <Route path='/admin' element={<Admin />} />
           <Route path='*' element={<ErrorPage />} />
         </Routes>

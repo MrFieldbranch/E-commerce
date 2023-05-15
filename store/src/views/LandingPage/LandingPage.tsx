@@ -58,6 +58,10 @@ function LandingPage() {
             <Button routeName="/sweaterswomen" buttonName="Tröjor Dam" />
             <Button routeName="/trousersmen" buttonName="Byxor Herr" />
             <Button routeName="/trouserswomen" buttonName="Byxor Dam" />
+            <Button routeName="/shirtsmen" buttonName="Skjortor Herr" />
+            <Button routeName="/shirtswomen" buttonName="Skjortor Dam" />
+            <Button routeName="/shoesmen" buttonName="Skor Herr" />
+            <Button routeName="/shoeswomen" buttonName="Skor Dam" />
             {sweatersArray}
             {trousersArray}
         </section>
