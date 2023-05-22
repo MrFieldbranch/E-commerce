@@ -14,6 +14,8 @@ import ShirtsMen from './views/ShirtsMen/ShirtsMen';
 import ShirtsWomen from './views/ShirtsWomen/ShirtsWomen';
 import ShoesMen from './views/ShoesMen/ShoesMen';
 import ShoesWomen from './views/ShoesWomen/ShoesWomen';
+import AllMen from './views/AllMen/AllMen';
+import AllWomen from './views/AllWomen/AllWomen';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/start' element={<LandingPage />} />
+          <Route path='/allmen' element={<AllMen />} />
+          <Route path='/allwomen' element={<AllWomen />} />
           <Route path='/sweatersmen' element={<SweatersMen />} />
           <Route path='/sweaterswomen' element={<SweatersWomen />} />
           <Route path='/trousersmen' element={<TrousersMen />} />

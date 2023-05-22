@@ -28,3 +28,7 @@ export interface IProductForGrid {
     altName: string;
     price: number;
 }
+
+export interface IHero {
+    imageLink: string;
+}

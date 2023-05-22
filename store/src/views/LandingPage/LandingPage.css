@@ -1,0 +1,7 @@
+.rubrik h2 {
+    margin: 2rem 0rem 0.5rem 0rem;
+}
+
+.hero:hover {
+    cursor: pointer;
+}

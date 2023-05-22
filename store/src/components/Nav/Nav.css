@@ -1,9 +1,13 @@
 nav {    
-    padding: 0rem 4rem;
+    padding: 1rem 4rem;
 }
 
 .text-container-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;    
+}
+
+.text-container-nav img {
+    width: 9rem;
 }
